@@ -1,0 +1,83 @@
+.overlay_container {
+  position: absolute;
+}
+
+.overlay_container img {
+  width: 15%;
+  height: 100%;
+  margin: 20px;
+}
+
+.overlay_innerContainer {
+  color: #b1c1f0;
+  width: 50%;
+  padding: 10% 5%;
+}
+
+.overlay_innerContainer h1 {
+  font-size: 6rem;
+}
+
+.overlay_innerContainer p {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.overlay_button_container {
+  position: absolute; /* Position the container absolutely */
+  top: 400px; /* Increase the distance from the bottom */
+  left: 60px; /* Increase the distance from the right */
+  display: flex;
+  align-items: flex-end; /* Align items to the bottom */
+  justify-content: flex-end; /* Align items to the right */
+  width: fit-content; /* Ensure the container wraps around its content */
+}
+
+
+.overlay_button_container_inner {
+  display: grid; /* Use grid layout for rows and columns */
+  grid-template-columns: repeat(2, auto); /* Two columns */
+  grid-gap: 20px; /* Adjust gap between buttons */
+  z-index: 1;
+  pointer-events: all;
+}
+
+.overlay_button_container button {
+  background-color: #18254e;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  width: 100%; /* Make buttons take the full width */
+  max-width: 300px; /* Add a max-width to ensure they don't stretch too much */
+}
+
+.overlay_button_container button:hover {
+  box-shadow: 0 0 30px rgba(136, 162, 218, 0.7); /* Change glow intensity on hover */
+  -webkit-box-shadow: 0 0 30px rgba(136, 162, 218, 0.7); /* WebKit prefix for box-shadow property */
+}
+
+@media (max-width: 600px) {
+  .overlay_button_container_inner {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 5px; /* Reduce gap for mobile */
+  }
+
+  .overlay_button_container button {
+    width: 100%; /* Ensure full width on mobile */
+    max-width: none; /* Remove max-width for mobile to ensure they take the full container width */
+  }
+}
+
+@media (min-width: 601px) {
+  .overlay_button_container_inner {
+    grid-template-columns: repeat(2, auto); /* Two columns for larger screens */
+  }
+
+  .overlay_button_container button {
+    width: auto; /* Ensure buttons don't take full width on larger screens */
+  }
+}
