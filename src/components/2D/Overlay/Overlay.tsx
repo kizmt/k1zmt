@@ -33,7 +33,7 @@ function Overlay() {
           <div className={style.overlay_button_container}>
             <div className={style.overlay_button_container_inner}>
               <div className={style.overlay_button_row}>
-                <Link href="https://docs.arcana.markets/" target="_blank">
+                <Link href="https://github.com/kizmt" target="_blank">
                   <button className={style.button}>View Profile</button>
                 </Link>
               </div>

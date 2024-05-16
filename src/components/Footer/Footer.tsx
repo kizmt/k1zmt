@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { FaX } from "react-icons/fa6";
+import { FaTelegram, FaX } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
 
 export default function Footer() {
     return (
         <footer className="min-w-full px-4 py-1 top-0 z-10 text-white">
             <div className="flex items-center justify-center mx-auto p-4 text-2xl">
+            <Link href="https://t.me/k1zmet" className="text-white mx-2">
+                    <FaTelegram />
+                </Link>
                 <Link href="https://twitter.com/toadofdestiny" className="text-white mx-2">
                     <FaX />
                 </Link>
