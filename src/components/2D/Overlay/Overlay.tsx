@@ -3,7 +3,6 @@ import style from "./Overlay.module.css";
 import "../../../../public/styles/ff7-ui-fonts.css"; // Import the external CSS file
 import TextAnimator from "@/components/Text/TextAnimator";
 import Link from "next/link";
-// import "../../../styles/ff7-ui.css"; // Import the external CSS file
 
 function Overlay() {
   const [showButtons, setShowButtons] = useState(false);

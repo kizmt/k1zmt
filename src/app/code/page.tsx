@@ -2,14 +2,15 @@
 
 import { useEffect, useState, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import styles from "./page.module.css";
+import styles from "../page.module.css";
 import Stars from "@/components/3D/Stars";
-import Modal from "@/components/3D/Modal";
-import Overlay from "@/components/2D/Overlay/Overlay";
 import Loader from "@/components/2D/Loader/Loader";
+// import MusicPlayer from "@/components/Audio/AudioPlayer";
 import TopBar from "@/components/TopBar/TopBar";
+import Footer from "@/components/Footer/Footer";
+import Overlay2 from "@/components/2D/Overlay/Overlay2";
 
-const Home: React.FC = () => {
+const Code: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
@@ -29,20 +30,15 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className={isMobile ? styles.main_container_mobile : styles.main_container}>
+    <div className={styles.main_container}>
       <Suspense fallback={<Loader />}>
         <TopBar />
-        <Overlay />
+        <Overlay2 />
         <Canvas
           camera={{ position: [0, 0, 1] }}
           style={{ width: "100%", height: "100%" }} // Ensure the canvas takes the full height and width
         >
           <Stars />
-          <Modal
-            position={isMobile ? [0.04, -0.09, 0] : [0.8, 0, 0]}
-            rotation={isMobile ? [0, Math.PI * -0.08, 0] : [0, Math.PI * -0.2, 0]}
-            scale={isMobile ? [0.0075, 0.0075, 0.0075] : [0.0095, 0.0095, 0.0095]}
-          />
           <pointLight position={[100, 100, 100]} intensity={0.8} />
           <hemisphereLight
             color="#234fad"
@@ -56,4 +52,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Code;

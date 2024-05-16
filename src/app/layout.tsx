@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import '../styles/ff7-ui-fonts.css';
 import '../styles/ff7-ui.css';
+import MusicPlayer from "@/components/Audio/AudioPlayer";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <MusicPlayer />
+        </body>
+        <Footer />
+
     </html>
   );
 }
