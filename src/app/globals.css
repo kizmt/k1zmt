@@ -35,3 +35,8 @@ body {
 nav {
   background-color: none
 }
+
+.text.hidden {
+  display: none;
+}
+

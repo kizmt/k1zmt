@@ -8,18 +8,18 @@
   z-index: 100;
   background-color: black;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   justify-content: center;
   align-items: center;
 }
 
 .loader::after {
   content: "";
-  border: 0.2em solid transparent;
-  border-top: 0.2em solid #fff;
+  border: 0.3em solid transparent;
+  border-top: 0.3em solid #fff;
   border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
+  width: 8rem; /* Increased size */
+  height: 8rem; /* Increased size */
   animation: spin 0.75s linear infinite;
   position: absolute;
   top: 50%;

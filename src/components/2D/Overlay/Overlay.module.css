@@ -7,77 +7,101 @@
   height: 100%;
   margin: 20px;
 }
-
 .overlay_innerContainer {
   color: #b1c1f0;
-  width: 50%;
+  width: 60%;
   padding: 10% 5%;
 }
-
 .overlay_innerContainer h1 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
-
 .overlay_innerContainer p {
-  font-size: 2.5rem;
-  margin-top: 10px;
+  font-size: 1.2rem;
+  margin-top: 30px;
 }
-
 .overlay_button_container {
-  position: absolute; /* Position the container absolutely */
-  top: 400px; /* Increase the distance from the bottom */
-  left: 60px; /* Increase the distance from the right */
+  position: relative;
   display: flex;
-  align-items: flex-end; /* Align items to the bottom */
-  justify-content: flex-end; /* Align items to the right */
-  width: fit-content; /* Ensure the container wraps around its content */
+  align-items: center;
+  justify-content: center;
 }
-
-
 .overlay_button_container_inner {
-  display: grid; /* Use grid layout for rows and columns */
-  grid-template-columns: repeat(2, auto); /* Two columns */
-  grid-gap: 20px; /* Adjust gap between buttons */
+  position: absolute;
   z-index: 1;
   pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
-
 .overlay_button_container button {
   background-color: #18254e;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px 40px;
   font-size: 24px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: box-shadow 0.2s ease-in-out;
-  width: 100%; /* Make buttons take the full width */
-  max-width: 300px; /* Add a max-width to ensure they don't stretch too much */
 }
-
 .overlay_button_container button:hover {
   box-shadow: 0 0 30px rgba(136, 162, 218, 0.7); /* Change glow intensity on hover */
   -webkit-box-shadow: 0 0 30px rgba(136, 162, 218, 0.7); /* WebKit prefix for box-shadow property */
 }
 
-@media (max-width: 600px) {
-  .overlay_button_container_inner {
-    grid-template-columns: 1fr; /* Single column layout for mobile */
-    gap: 5px; /* Reduce gap for mobile */
-  }
+.overlay_button_row button {
+  font-size: 24px;
+  padding: 10px 35px;
+}
 
-  .overlay_button_container button {
-    width: 100%; /* Ensure full width on mobile */
-    max-width: none; /* Remove max-width for mobile to ensure they take the full container width */
+@media (max-width: 600px) {
+  .overlay_innerContainer {
+    width: fit-content;
+  }
+  .overlay_innerContainer h1 {
+    font-size: 2.7rem;
+  }
+  .overlay_button_container {
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+  }
+  .overlay_button_container_inner {
+    gap: 10px;
+  }
+  .overlay_innerContainer p {
+    font-size: 1rem;
+    margin-top: 10px;
   }
 }
 
-@media (min-width: 601px) {
-  .overlay_button_container_inner {
-    grid-template-columns: repeat(2, auto); /* Two columns for larger screens */
-  }
+.overlay_button_container {
+  display: flex;
+  justify-content: start;
+  margin-top: 100px; /* Adjust to move buttons further down */
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 3s; /* Adjust the delay as needed */
+  z-index: 10;
+}
 
-  .overlay_button_container button {
-    width: auto; /* Ensure buttons don't take full width on larger screens */
+.overlay_button_container_inner {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.overlay_button_row {
+  display: flex;
+  gap: 10px;
+}
+
+.button:hover {
+  background-color: #4d8bb4;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }
