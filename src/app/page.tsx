@@ -2,12 +2,11 @@
 
 import { useEffect, useState, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import styles from "./page.module.css";
 import Stars from "@/components/3D/Stars";
 import Modal from "@/components/3D/Modal";
 import Overlay from "@/components/2D/Overlay/Overlay";
 import Loader from "@/components/2D/Loader/Loader";
-import TopBar from "@/components/TopBar/TopBar";
+import TopBar from "@/components/2D/TopBar/TopBar";
 
 const Home: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -29,7 +28,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className={isMobile ? styles.main_container_mobile : styles.main_container}>
+    <div className={isMobile ? 'main_container_mobile' : 'main_container'}>
       <Suspense fallback={<Loader />}>
         <TopBar />
         <Overlay />

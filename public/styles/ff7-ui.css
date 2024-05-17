@@ -11,6 +11,8 @@
     z-index: 1;
     outline: none;
     overflow: hidden;
+    text-align: center; /* Center the text inside the <p> tag */
+    margin: 10px;     /* Center the <p> tag as a block element */
   }
   
   .ff7-window:before, .ff7-window:after {
@@ -131,3 +133,9 @@
   body {
     background: black;
   }
+
+  .max-w-2xl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

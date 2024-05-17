@@ -40,3 +40,24 @@ nav {
   display: none;
 }
 
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This ensures the container takes the full viewport height */
+}
+
+.main_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #080b16, #0b2542);
+  font-family: "Inter", sans-serif;
+}
+
+.bg_primary {
+  background: linear-gradient(to right, #080b16, #0b2542);
+  font-family: "Inter", sans-serif;
+}
+
+

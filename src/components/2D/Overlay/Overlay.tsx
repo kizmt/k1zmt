@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./Overlay.module.css";
 import "../../../../public/styles/ff7-ui-fonts.css"; // Import the external CSS file
-import TextAnimator from "@/components/Text/TextAnimator";
+import TextAnimator from "@/components/2D/Text/TextAnimator";
 import Link from "next/link";
 
 function Overlay() {

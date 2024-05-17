@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { init, animateText, formatText } from '../../../public/assets/animated-text';
+import { init, animateText, formatText } from '../../../../public/assets/animated-text';
 
 interface TextAnimatorProps {
   text: string;

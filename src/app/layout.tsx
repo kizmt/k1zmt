@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import '../styles/ff7-ui-fonts.css';
-import '../styles/ff7-ui.css';
-import MusicPlayer from "@/components/Audio/AudioPlayer";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/2D/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <MusicPlayer />
         </body>
         <Footer />
 
