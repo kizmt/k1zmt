@@ -13,7 +13,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const x = window.matchMedia("(max-width: 700px)");
+      const x = window.matchMedia("(max-width: 450px)");
       setIsMobile(x.matches);
     };
 
