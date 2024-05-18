@@ -1,65 +1,82 @@
-import React, { useEffect, useState } from "react";
-import style from "./Overlay.module.css";
-import "../../../../public/styles/ff7-ui-fonts.css";
-// import TextAnimator from "@/components/2D/Text/TextAnimator";
-// import "../../../styles/ff7-ui.css"; // Import the external CSS file
+import type { Metadata } from 'next';
+import "../../../../public/styles/ff7-ui-fonts.css"; // Import the external CSS file
+import TextAnimator from '../Text/TextAnimator';
 
-const features = [
-  { name: 'Origin', description: 'Designed by Good Goods, Inc.' },
-  { name: 'Material', description: 'Solid walnut base with rare earth magnets and powder coated steel card cover' },
-  { name: 'Dimensions', description: '6.25" x 3.55" x 1.15"' },
-  { name: 'Finish', description: 'Hand sanded and finished with natural oil' },
-  { name: 'Includes', description: 'Wood card tray and 3 refill packs' },
-  { name: 'Considerations', description: 'Made from natural materials. Grain and color vary with each item.' },
-]
+export const metadata: Metadata = {
+  title: 'Work',
+  description: 'A summary of my work and contributions.',
+};
 
-function Overlay3() {
+export default function Work() {
   return (
-    <div className={style.overlay_container}>
-    <div className="bg-none">
-      <div className="mx-auto grid grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-        <div>
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Technical Specifications</h2>
-          <p className="mt-4 text-white">
-            The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
-            steel divider separates active cards from new ones, or can be used to archive important task lists.
-          </p>
-
-          <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-            {features.map((feature) => (
-              <div key={feature.name} className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-white">{feature.name}</dt>
-                <dd className="mt-2 text-sm text-white">{feature.description}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
-            alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-            className="rounded-lg bg-gray-100"
-          />
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
-            alt="Top down view of walnut card tray with embedded magnets and card groove."
-            className="rounded-lg bg-gray-100"
-          />
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
-            alt="Side of walnut card tray with card groove and recessed card area."
-            className="rounded-lg bg-gray-100"
-          />
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
-            alt="Walnut card tray filled with cards and card angled in dedicated groove."
-            className="rounded-lg bg-gray-100"
-          />
-        </div>
+    <section className="absolute antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
+      <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+        <h1 className="font-medium text-2xl mb-8 tracking-tighter">my work</h1>
+        <p className="ff7-text">
+          <TextAnimator
+            text={`
+          On a mission to build products developers love, and along the
+          way, teach the next generation of developers. Here's a summary of my
+          work so far.`} />
+        </p>
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Arcana Markets</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm ff7-text">
+          Co-founder and developer, 2023 - present
+        </p>
+        <br></br>
+        <p className="ff7-text">
+          I joined Vercel early to grow Next.js and our developer community.
+          I built our Developer Relations team to teach our community about our
+          products. Since I joined Vercel in 2020, Next.js active developers have grown
+          1000 percent, now at around 900k. Next.js is now a top 10 software 
+          project on GitHub with. It&apos;s used by Walmart, ChatGPT, Starbucks, Okta,
+          Datastax, Notion, and more.
+        </p>
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Mako Labs</h2>
+        <p className="text-neutral-600 ff7-text dark:text-neutral-400 text-sm">
+          Freelance Web Developer, 2022 to present
+        </p>
+        <br></br>
+        <p className="ff7-text">
+          Workiva WK is a cloud platform for data reporting and compliance.
+          During my time at Workiva, I gained my first production experience
+          using React. I worked on tooling to help predict and alert and
+          regressions in our SaaS platform, building a product similar to
+          open-source tools like Sentry.
+        </p>
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">SolApe DEX</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm ff7-text">
+          Fullstack Engineer, Operations, 2020 to 2022
+        </p>
+        <br></br>
+        <p className="ff7-text">
+          Hy-Vee, an almost 100-year-old grocery chain in the United States,
+          wanted to build a new version of their digital storefront. I joined a
+          team of product engineers
+          working across web and mobile to rebuild their legacy .NET application
+          around 500k MAU with React and React Native.
+          On the frontend, I led our move from a custom webpack and React
+          configuration to Next.js and the latest React patterns. In the
+          process, I shared my learnings online, helping educate members of the
+          React and Next.js community by creating courses.
+        </p>
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Scan Global Logistics</h2>
+        <p className="text-neutral-600 ff7-text dark:text-neutral-400 text-sm">
+          Business Development Manager, 2017 to 2020
+        </p>
+        <br></br>
+        <p className="ff7-text">
+          Workiva WK is a cloud platform for data reporting and compliance.
+          During my time at Workiva, I gained my first production experience
+          using React. I worked on tooling to help predict and alert and
+          regressions in our SaaS platform, building a product similar to
+          open-source tools like Sentry.
+        </p>
       </div>
-    </div>
-  </div>
+    </section>
   );
 }
-
-export default Overlay3;

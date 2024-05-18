@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Navbar() {
     return (
         <nav
-            className="min-w-full px-4 py-4 top-0 z-10 text-white"
+            className="min-w-full px-4 py-4 top-0 z-10 text-white bg_primary"
             style={{ backgroundColor: 'rgba(0, 0, 0, 0.0)' }}
         >
             <div className="max-w-5xl mx-auto px-4 prose prose-xl">

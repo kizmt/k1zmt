@@ -6,7 +6,6 @@ import Stars from "@/components/3D/Stars";
 import Modal from "@/components/3D/Modal";
 import Overlay from "@/components/2D/Overlay/Overlay";
 import Loader from "@/components/2D/Loader/Loader";
-import TopBar from "@/components/2D/TopBar/TopBar";
 
 const Home: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -30,7 +29,6 @@ const Home: React.FC = () => {
   return (
     <div className={isMobile ? 'main_container_mobile' : 'main_container'}>
       <Suspense fallback={<Loader />}>
-        <TopBar />
         <Overlay />
         <Canvas
           camera={{ position: [0, 0, 1] }}

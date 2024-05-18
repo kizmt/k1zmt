@@ -79,3 +79,9 @@ nav {
   border-radius: 15px; /* Adjust the radius as needed */
   overflow: hidden;    /* Ensure that child elements do not overflow the rounded corners */
 }
+
+.centered-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

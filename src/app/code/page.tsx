@@ -4,7 +4,6 @@ import { useEffect, useState, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import Stars from "@/components/3D/Stars";
 import Loader from "@/components/2D/Loader/Loader";
-import TopBar from "@/components/2D/TopBar/TopBar";
 import Overlay3 from "@/components/2D/Overlay/Overlay3";
 
 const Code: React.FC = () => {
@@ -29,7 +28,6 @@ const Code: React.FC = () => {
   return (
     <div className='main_container'>
       <Suspense fallback={<Loader />}>
-        <TopBar />
         <Overlay3 />
         <Canvas
           camera={{ position: [0, 0, 1] }}
