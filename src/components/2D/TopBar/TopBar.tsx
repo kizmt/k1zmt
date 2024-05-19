@@ -21,6 +21,7 @@ export default function Navbar() {
                     </Link>
                     <div className="flex space-x-4">
                         <Link href="/story" className="text-white sm:text-xl text-lg no-underline">Story</Link>
+                        <Link href="/work" className="text-white sm:text-xl text-lg no-underline">Work</Link>
                         <Link href="/code" className="text-white sm:text-xl text-lg no-underline">Code</Link>
                     </div>
                 </div>

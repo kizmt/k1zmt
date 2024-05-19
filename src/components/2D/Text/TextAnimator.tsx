@@ -11,7 +11,7 @@ const TextAnimator: React.FC<TextAnimatorProps> = ({ text, onComplete }) => {
 
   useEffect(() => {
     if (textRef.current) {
-      textRef.current.innerHTML = ''; // Clear the innerHTML before setting formatted text
+      textRef.current.innerHTML = '';
       textRef.current.innerHTML = formatText(text);
       init(textRef.current);
       animateText(textRef.current, onComplete);

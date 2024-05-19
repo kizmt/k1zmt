@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import style from "./Overlay.module.css";
-import "../../../../public/styles/ff7-ui-fonts.css"; // Import the external CSS file
 import TextAnimator from "@/components/2D/Text/TextAnimator";
 import Link from "next/link";
 import { FaGithub, FaVolumeMute, FaMusic } from "react-icons/fa";
@@ -40,15 +39,17 @@ function Overlay() {
         <div className="ff7-text">
           <TextAnimator
             text={`This page is dedicated to my work as a fullstack web developer within the blockchain space, 
-            showcasing user apps, open source contributions and other milestone achievements.\n\n
-            Click the 'view profile' button to begin navigating the site, or scroll down for direct contact details.`}
+            showcasing user apps, open source contributions and other milestone achievements.`}
+          />
+          <TextAnimator
+            text={`Click the 'view profile' button to begin navigating the site, or scroll down for direct contact details.`}
           />
         </div>
         {showButtons && (
           <div className={style.overlay_button_container}>
             <div className={style.overlay_button_container_inner}>
               <div className={style.overlay_button_row}>
-                <Link href="https://github.com/kizmt" target="_blank">
+                <Link href="/story">
                   <button className={style.button}>View Profile</button>
                 </Link>
                 <div className={style.overlay_button_icon_row}>

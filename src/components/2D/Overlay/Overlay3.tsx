@@ -1,66 +1,80 @@
-import React, { useEffect, useState } from "react";
-import style from "./Overlay.module.css";
 import "../../../../public/styles/ff7-ui-fonts.css";
-// import TextAnimator from "@/components/2D/Text/TextAnimator";
-// import "../../../styles/ff7-ui.css"; // Import the external CSS file
+import TextAnimator from '../Text/TextAnimator';
 
-const callouts = [
-  {
-    name: 'Openbook',
-    description: 'Decentralized Limit Orderbook',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    href: '#',
-  },
-  {
-    name: 'SolApe DEX',
-    description: 'Trading Interface',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-    href: '#',
-  },
-  {
-    name: 'Arcana',
-    description: 'DEX Analytics',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-    href: '#',
-  },
-]
-
-function Overlay2() {
+export default function Overlay3() {
   return (
-    <div className={style.overlay_container}>
-    <div className="bg-none">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto py-16 sm:py-24 lg:max-w-none lg:py-32">
-          <h2 className="text-2xl font-bold text-white">Collections</h2>
-          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-            {callouts.map((callout) => (
-              <div key={callout.name} className="group relative">
-                <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                  <img
-                    src={callout.imageSrc}
-                    alt={callout.imageAlt}
-                    className="h-full w-full object-cover object-center"
-                  />
-                </div>
-                <h3 className="mt-6 text-sm text-white">
-                  <a href={callout.href}>
-                    <span className="absolute inset-0" />
-                    {callout.name}
-                  </a>
-                </h3>
-                <p className="text-base font-semibold text-white">{callout.description}</p>
-              </div>
-            ))}
-          </div>
+    <div className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
+      <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+        <h1 className="font-medium text-2xl mb-8 tracking-tighter">my work</h1>
+        <div className="ff7-text">
+          <TextAnimator
+            text={`
+          On a mission to build products developers love, and along the
+          way, teach the next generation of developers. Here's a summary of my
+          work so far.`} />
+        </div>
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Arcana Markets</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm ff7-text">
+          Co-founder and developer, 2023 - present
+        </p>
+        <br />
+        <div className="ff7-text">
+          <TextAnimator
+            text={`I joined Vercel early to grow Next.js and our developer community.
+            I built our Developer Relations team to teach our community about our
+            products. Since I joined Vercel in 2020, Next.js active developers have grown
+            1000 percent, now at around 900k. Next.js is now a top 10 software 
+            project on GitHub with. It&apos;s used by Walmart, ChatGPT, Starbucks, Okta,
+            Datastax, Notion, and more.`} />
+        </div>
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Mako Labs</h2>
+        <p className="text-neutral-600 ff7-text dark:text-neutral-400 text-sm">
+          Freelance Web Developer, 2022 to present
+        </p>
+        <br />
+        <div className="ff7-text">
+          <TextAnimator
+            text={`Workiva WK is a cloud platform for data reporting and compliance.
+            During my time at Workiva, I gained my first production experience
+            using React. I worked on tooling to help predict and alert and
+            regressions in our SaaS platform, building a product similar to
+            open-source tools like Sentry.`} />
+        </div>
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">SolApe DEX</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm ff7-text">
+          Fullstack Engineer, Operations, 2020 to 2022
+        </p>
+        <br />
+        <div className="ff7-text">
+          <TextAnimator
+            text={`Hy-Vee, an almost 100-year-old grocery chain in the United States,
+            wanted to build a new version of their digital storefront. I joined a
+            team of product engineers
+            working across web and mobile to rebuild their legacy .NET application
+            around 500k MAU with React and React Native.
+            On the frontend, I led our move from a custom webpack and React
+            configuration to Next.js and the latest React patterns. In the
+            process, I shared my learnings online, helping educate members of the
+            React and Next.js community by creating courses.`} />
+        </div>
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Scan Global Logistics</h2>
+        <p className="text-neutral-600 ff7-text dark:text-neutral-400 text-sm">
+          Business Development Manager, 2017 to 2020
+        </p>
+        <br />
+        <div className="ff7-text">
+          <TextAnimator
+            text={`Workiva WK is a cloud platform for data reporting and compliance.
+            During my time at Workiva, I gained my first production experience
+            using React. I worked on tooling to help predict and alert and
+            regressions in our SaaS platform, building a product similar to
+            open-source tools like Sentry.`} />
         </div>
       </div>
     </div>
-    </div>
   );
 }
-
-export default Overlay2;
-

@@ -4,10 +4,11 @@ import { useEffect, useState, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import Stars from "@/components/3D/Stars";
 import Loader from "@/components/2D/Loader/Loader";
-// import MusicPlayer from "@/components/Audio/AudioPlayer";
 import Overlay2 from "@/components/2D/Overlay/Overlay2";
+import Footer from "@/components/2D/Footer/Footer";
+import TopBar from "@/components/2D/TopBar/TopBar";
 
-const Story: React.FC = () => {
+const Page: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
@@ -29,10 +30,11 @@ const Story: React.FC = () => {
   return (
     <div className='main_container'>
       <Suspense fallback={<Loader />}>
-      <Overlay2 />
+      <TopBar />
+        <Overlay2 />
         <Canvas
           camera={{ position: [0, 0, 1] }}
-          style={{ width: "100%", height: "100%" }} // Ensure the canvas takes the full height and width
+          style={{ width: "100%", height: "100%" }}
         >
           <Stars />
           <pointLight position={[100, 100, 100]} intensity={0.8} />
@@ -43,9 +45,10 @@ const Story: React.FC = () => {
             intensity={0.85}
           />
         </Canvas>
+        <Footer />
       </Suspense>
     </div>
   );
 };
 
-export default Story;
+export default Page;
