@@ -43,7 +43,7 @@ function Overlay2() {
         about me 👋
       </h1>
       <div className="ff7-text prose prose-neutral dark:prose-invert">
-        I'm a frontend developer, optimist, and community builder. 
+        I&apos;m a frontend developer, optimist, and community builder. 
         I currently work Vercel where I help teach the Next.js
       </div>
       <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
@@ -117,13 +117,13 @@ function Overlay2() {
 
       </div>
       <div className="ff7-text">
-          Over the past decade, I've written content on my blog and newsletter.
-          I try to keep things simple. You'll find writing about technologies
-          I'm interested in at the time, or how I'm learning and growing in my
+          Over the past decade, I&apos;ve written content on my blog and newsletter.
+          I try to keep things simple. You&apos;ll find writing about technologies
+          I&apos;m interested in at the time, or how I&apos;m learning and growing in my
           career, sharing knowledge along the way.
       </div>
       <div className="ff7-text">
-          I've worked with and advised companies on{' '}
+          I&apos;ve worked with and advised companies on{' '}
           <Link href="/blog/developer-marketing">developer marketing</Link>,{' '}
           <Link href="/blog/devrel">developer relations</Link>, building
           open-source communities, product-led growth, and more.
