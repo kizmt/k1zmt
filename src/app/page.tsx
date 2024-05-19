@@ -13,9 +13,9 @@ const Home: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   return (
-    <div className='main_container'>
+    <div className='main_container overflow-auto'>
       <Suspense fallback={<Loader />}>
-      <TopBar />
+        <TopBar />
         <Overlay />
         <Canvas
           camera={{ position: [0, 0, 1] }}

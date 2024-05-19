@@ -28,7 +28,7 @@ const Page: React.FC = () => {
   }, []);
 
   return (
-    <div className='main_container'>
+    <div className='main_container overflow-auto'>
       <Suspense fallback={<Loader />}>
       <TopBar />
         <Overlay4 />

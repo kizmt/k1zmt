@@ -26,7 +26,6 @@ function ArrowIcon() {
   );
 }
 
-
 function Overlay2() {
   const [showButtons, setShowButtons] = useState(false);
   useEffect(() => {
@@ -36,11 +35,12 @@ function Overlay2() {
   
     return () => clearTimeout(timeout);
   }, []);
+
   return (
     <section>
-      <div className="absolute antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
+      <div className="antialiased  max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
       <h1 className="mb-8 text-2xl font-medium tracking-tighter ">
-        about me 👋
+        about me ⚡️
       </h1>
       <div className="ff7-text prose prose-neutral dark:prose-invert">
         I&apos;m a frontend developer, optimist, and community builder. 
@@ -49,7 +49,7 @@ function Overlay2() {
       <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
         <div className="relative h-40">
           <Image
-            alt="Me speaking on stage at React Summit about the future of Next.js"
+            alt="tom n jerry"
             src={jerry}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -59,7 +59,7 @@ function Overlay2() {
         </div>
         <div className="relative sm:row-span-2 row-span-1">
           <Image
-            alt="Me standing on stage at Reactathon delivering the keynote"
+            alt="aerith ff7 remake"
             src={aerith}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -69,7 +69,7 @@ function Overlay2() {
         </div>
         <div className="relative">
           <Image
-            alt="Me and Guillermo Rauch on stage for Vercel Ship, answering questions from the Next.js community"
+            alt="gohan ssj2"
             src={gohan}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -77,10 +77,11 @@ function Overlay2() {
             className="rounded-lg object-cover"
           />
         </div>
-        <div className="relative row-span-3">
+        <div className="relative row-span-2">
           <Image
-            alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
+            alt="Luka"
             src={donchic}
+            fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover sm:object-center"
@@ -88,7 +89,7 @@ function Overlay2() {
         </div>
         <div className="relative row-span-2">
           <Image
-            alt="My badge on top of a pile of badges from a Vercel meetup we held"
+            alt="west ham"
             src={hammers}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -98,9 +99,8 @@ function Overlay2() {
         </div>
         <div className="relative h-40">
           <Image
-            alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
+            alt="trunks ssj"
             src={trunks}
-            fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover"
@@ -128,30 +128,6 @@ function Overlay2() {
           <Link href="/blog/devrel">developer relations</Link>, building
           open-source communities, product-led growth, and more.
       </div>
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://twitter.com/leeerob"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">follow me</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://leerob.substack.com"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">get email updates</p>
-          </a>
-        </li>
-      </ul>
       <div className={style.overlay_button_container}>
         <div className={style.overlay_button_row}>
           <Link href="/work">

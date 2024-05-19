@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./Overlay.module.css";
 
 const callouts = [
   {
@@ -27,8 +26,8 @@ const callouts = [
 
 function Overlay4() {
   return (
-    <div className={style.overlay_container}>
-    <div className="bg-none">
+    <div className="antialiased absolute max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+      <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto py-16 sm:py-24 lg:max-w-none lg:py-32">
           <h2 className="text-2xl font-bold text-white">Collections</h2>

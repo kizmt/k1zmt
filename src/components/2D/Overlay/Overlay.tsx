@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import style from "./Overlay.module.css";
-import TextAnimator from "@/components/2D/Text/TextAnimator";
 import Link from "next/link";
+import style from "./Overlay.module.css";
+import "../../../../public/styles/ff7-ui-fonts.css";
+import TextAnimator from "@/components/2D/Text/TextAnimator";
 import { FaGithub, FaVolumeMute, FaMusic } from "react-icons/fa";
 import useAudioPlayerStore from "@/stores/useAudioPlayerStore";
 
@@ -33,18 +34,15 @@ function Overlay() {
   return (
     <div className={style.overlay_container}>
       <div className={style.overlay_innerContainer}>
-        <h1 className="ff7-text">
-          <TextAnimator text="hi, I'm Scott" />
+        <h1>
+          <TextAnimator text={`hi, I'm Scott`} />
         </h1>
-        <div className="ff7-text">
           <TextAnimator
-            text={`This page is dedicated to my work as a fullstack web developer within the blockchain space, 
-            showcasing user apps, open source contributions and other milestone achievements.`}
+            text={`This page is dedicated to my work as a fullstack 
+            web developer within the blockchain space, 
+            showcasing user apps, open source contributions and other milestone achievements.
+            Click the 'view profile' button to begin navigating the site, or scroll down for direct contact details.`}
           />
-          <TextAnimator
-            text={`Click the 'view profile' button to begin navigating the site, or scroll down for direct contact details.`}
-          />
-        </div>
         {showButtons && (
           <div className={style.overlay_button_container}>
             <div className={style.overlay_button_container_inner}>
