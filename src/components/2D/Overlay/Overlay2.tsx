@@ -17,11 +17,9 @@ function Overlay2() {
         <h1 className="fade-in-text mb-4 text-2xl font-medium tracking-tighter">
           about me ⚡️
         </h1>
-        <div>
+        <div className="font-medium">
         <TextAnimator
-            text={`
-          I'm a frontend developer, optimist, and community builder. 
-          I currently work at Vercel where I help teach Next.js.`}/>
+            text={`I'm a frontend developer, optimist, and community builder. I currently work at Vercel where I help teach Next.js.`}/>
         </div>
         <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
           <div className="relative h-40">
@@ -84,20 +82,20 @@ function Overlay2() {
             />
           </div>
         </div>
-        <div className="fade-in-text">
+        <div className="font-medium fade-in-text">
           I create educational content for developers, teaching them about web
           development, JavaScript and TypeScript, React and Next.js, and more.
           This comes in all forms: blog posts, videos, tweets, conference talks,
           and workshops. You can watch some of my favorites below.
         </div>
         <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
-        <div className="fade-in-text">
+        <div className="font-medium fade-in-text">
           Over the past decade, I&apos;ve written content on my blog and newsletter.
           I try to keep things simple. You&apos;ll find writing about technologies
           I&apos;m interested in at the time, or how I&apos;m learning and growing in my
           career, sharing knowledge along the way.
         </div>
-        <div className="fade-in-text">
+        <div className="font-medium fade-in-text">
           I&apos;ve worked with and advised companies on{' '}
           <Link href="/blog/developer-marketing">developer marketing</Link>,{' '}
           <Link href="/blog/devrel">developer relations</Link>, building

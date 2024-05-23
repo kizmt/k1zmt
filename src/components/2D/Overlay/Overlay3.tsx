@@ -14,7 +14,7 @@ export default function Overlay3() {
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Arcana Markets</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm ff7-text">
-          Co-founder and developer, 2023 - present
+          Co-founder and developer, 2023 to present
         </p>
         <br />
         <div>
@@ -28,7 +28,7 @@ export default function Overlay3() {
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Mako Labs</h2>
         <p className="text-neutral-600 ff7-text dark:text-neutral-400 text-sm">
-          Freelance Web Developer, 2022 to present
+          Freelance Web Developer, 2023 to present
         </p>
         <br />
         <div>
@@ -41,7 +41,7 @@ export default function Overlay3() {
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">SolApe DEX</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm ff7-text">
-          Fullstack Engineer, Chief of Operations, 2020 to 2022
+          Fullstack Engineer, Chief of Operations, 2020 to 2023
         </p>
         <br />
         <div>
