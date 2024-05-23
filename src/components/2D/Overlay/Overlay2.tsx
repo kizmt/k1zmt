@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import gohan from '../../../../public/images/gifs/gohan2-optimize.gif';
 import aerith from '../../../../public/images/gifs/aerithz.gif';
@@ -9,7 +8,6 @@ import trunks from '../../../../public/images/gifs/trunks.gif';
 import TextAnimator from '../Text/TextAnimator';
 import "../../../../public/styles/ff7-ui-fonts.css";
 
-
 function Overlay2() {
   return (
     <div className="antialiased relative max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
@@ -19,7 +17,7 @@ function Overlay2() {
         </h1>
         <div className="font-medium">
         <TextAnimator
-            text={`I'm a frontend developer, optimist, and community builder. I currently work at Vercel where I help teach Next.js.`}/>
+            text={`Jack of all trades; I'm a developer, project manager, and chief operator. I'm currently building Arcana Markets, a yield-optimizing DeFi protocol on the Solana blockchain.`}/>
         </div>
         <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
           <div className="relative h-40">
@@ -88,7 +86,7 @@ function Overlay2() {
           This comes in all forms: blog posts, videos, tweets, conference talks,
           and workshops. You can watch some of my favorites below.
         </div>
-        <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
+        <div className="my-4 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
         <div className="font-medium fade-in-text">
           Over the past decade, I&apos;ve written content on my blog and newsletter.
           I try to keep things simple. You&apos;ll find writing about technologies
@@ -96,10 +94,16 @@ function Overlay2() {
           career, sharing knowledge along the way.
         </div>
         <div className="font-medium fade-in-text">
-          I&apos;ve worked with and advised companies on{' '}
-          <Link href="/blog/developer-marketing">developer marketing</Link>,{' '}
-          <Link href="/blog/devrel">developer relations</Link>, building
-          open-source communities, product-led growth, and more.
+          I&apos;ve worked with and advised companies on
+          developer marketing developer relations, 
+          building open-source communities, product-led growth, and more.
+        </div>
+        <br></br>
+          <div className="font-medium fade-in-text">
+          Over the past decade, I&apos;ve written content on my blog and newsletter.
+          I try to keep things simple. You&apos;ll find writing about technologies
+          I&apos;m interested in at the time, or how I&apos;m learning and growing in my
+          career, sharing knowledge along the way.
         </div>
       </div>
     </div>
