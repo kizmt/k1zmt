@@ -49,9 +49,19 @@ nav {
 
 .main_container {
   position: relative;
-  width: 100%;
+  min-height: 100vh;
   height: 100vh;
+  width: 100%;
   background: linear-gradient(to right, #080b16, #0b2542);
+}
+
+.canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .main_container_mobile {
@@ -93,4 +103,30 @@ nav {
     left: auto;       /* Reset the left property */
     transform: none;  /* Reset the transform */
   }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+  height: 8px; /* Adjust the height as needed */
+}
+
+::-webkit-scrollbar-track {
+  background: #080b16; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0b2542; /* Thumb color */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #080b16; /* Border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0b2542; /* Thumb hover color */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0b2542 #080b16;
 }

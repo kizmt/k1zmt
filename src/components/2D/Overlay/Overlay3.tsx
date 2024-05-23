@@ -3,7 +3,7 @@ import TextAnimator from '../Text/TextAnimator';
 
 export default function Overlay3() {
   return (
-    <div className="antialiased absolute max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
+    <div className="antialiased absolute max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
       <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
         <h1 className="font-medium text-2xl mb-8 tracking-tighter">my work</h1>
         <div className="ff7-text">
@@ -54,11 +54,7 @@ export default function Overlay3() {
             wanted to build a new version of their digital storefront. I joined a
             team of product engineers
             working across web and mobile to rebuild their legacy .NET application
-            around 500k MAU with React and React Native.
-            On the frontend, I led our move from a custom webpack and React
-            configuration to Next.js and the latest React patterns. In the
-            process, I shared my learnings online, helping educate members of the
-            React and Next.js community by creating courses.`} />
+            around 500k MAU with React and React Native..`} />
         </div>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Scan Global Logistics</h2>

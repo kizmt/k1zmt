@@ -7,6 +7,8 @@ import Loader from "@/components/2D/Loader/Loader";
 import Overlay2 from "@/components/2D/Overlay/Overlay2";
 import Footer from "@/components/2D/Footer/Footer";
 import TopBar from "@/components/2D/TopBar/TopBar";
+import Link from "next/link";
+import style from "../../components/2D/Overlay/Overlay.module.css";
 
 const Page: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -28,13 +30,13 @@ const Page: React.FC = () => {
   }, []);
 
   return (
-    <div className='main_container overflow-auto'>
+    <div className="main_container overflow-auto">
       <Suspense fallback={<Loader />}>
-      <TopBar />
-        <Overlay2 />
+      <TopBar />  
+      <Overlay2 />
         <Canvas
+          className="canvas"
           camera={{ position: [0, 0, 1] }}
-          style={{ width: "100%", height: "100%" }}
         >
           <Stars />
           <pointLight position={[100, 100, 100]} intensity={0.8} />
@@ -45,7 +47,14 @@ const Page: React.FC = () => {
             intensity={0.85}
           />
         </Canvas>
-        <Footer />
+        <div className={style.overlay_button_container}>
+          <div className={style.overlay_button_row}>
+            <Link href="/work">
+            <button className={style.button}>Next page</button>
+            </Link>
+          </div>
+        </div>
+          <Footer />
       </Suspense>
     </div>
   );

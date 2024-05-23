@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import style from "./Overlay.module.css";
@@ -35,14 +37,15 @@ function Overlay() {
     <div className={style.overlay_container}>
       <div className={style.overlay_innerContainer}>
         <h1>
-          <TextAnimator text={`hi, I'm Scott`} />
+          <TextAnimator text='hi, I&apos;m Scott' />
         </h1>
+        <div className="ff7-text">
           <TextAnimator
-            text={`This page is dedicated to my work as a fullstack 
-            web developer within the blockchain space, 
+            text="This page is dedicated to my work as a fullstack web developer within the blockchain space, 
             showcasing user apps, open source contributions and other milestone achievements.
-            Click the 'view profile' button to begin navigating the site, or scroll down for direct contact details.`}
+            Click the view profile button to begin navigating the site, or scroll down for direct contact details."
           />
+        </div>
         {showButtons && (
           <div className={style.overlay_button_container}>
             <div className={style.overlay_button_container_inner}>
