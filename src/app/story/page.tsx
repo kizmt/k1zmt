@@ -41,8 +41,8 @@ const Page: React.FC = () => {
   return (
     <div className="main_container overflow-auto">
       <Suspense fallback={<Loader />}>
-      <TopBar />  
-      <Overlay2 />
+        <TopBar />  
+        <Overlay2 />
         <Canvas
           className="canvas"
           camera={{ position: [0, 0, 1] }}
@@ -57,15 +57,15 @@ const Page: React.FC = () => {
           />
         </Canvas>
         {showButtons && (
-        <div className={style.overlay_button_container}>
-          <div className={style.overlay_button_row}>
-            <Link href="/work">
-            <button className={style.button}>Next page</button>
-            </Link>
+          <div className={`${style.overlay_button_container} z-20`}>
+            <div className={style.overlay_button_row}>
+              <Link href="/work">
+                <button className={style.button}>Next page</button>
+              </Link>
+            </div>
           </div>
-        </div>
         )}
-          <Footer />
+        <Footer />
       </Suspense>
     </div>
   );

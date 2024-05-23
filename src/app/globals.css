@@ -47,27 +47,37 @@ nav {
   height: 100vh; /* This ensures the container takes the full viewport height */
 }
 
-.main_container {
-  position: relative;
-  min-height: 100vh;
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(to right, #080b16, #0b2542);
-}
-
-.canvas {
-  position: fixed;
+.scrollable_container {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  overflow-y: auto;
+  padding-bottom: 80px; /* Adjust as needed to ensure the footer doesn't overlap */
 }
 
-.main_container_mobile {
-  position: relative;
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 140vh;
+  height: 100%;
+  z-index: -1; /* Ensure the canvas is behind the content */
+}
+
+.main_container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #080b16, #0b2542);
+}
+
+
+.main_container_mobile {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
   background: linear-gradient(to right, #080b16, #0b2542);
   font-family: "Inter", sans-serif;
 }

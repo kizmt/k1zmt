@@ -10,13 +10,13 @@ import "../../../../public/styles/ff7-ui-fonts.css";
 
 function Overlay2() {
   return (
-    <div className="antialiased relative max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
+    <div className="antialiased relative max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text pb-16 sm:pb-24 z-10">
       <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
         <h1 className="fade-in-text mb-4 text-2xl font-medium tracking-tighter">
           about me ⚡️
         </h1>
         <div className="font-medium">
-        <TextAnimator
+          <TextAnimator
             text={`Jack of all trades; I'm a developer, project manager, and chief operator. I'm currently building Arcana Markets, a yield-optimizing DeFi protocol on the Solana blockchain.`}/>
         </div>
         <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
@@ -99,7 +99,7 @@ function Overlay2() {
           building open-source communities, product-led growth, and more.
         </div>
         <br></br>
-          <div className="font-medium fade-in-text">
+        <div className="font-medium fade-in-text">
           Over the past decade, I&apos;ve written content on my blog and newsletter.
           I try to keep things simple. You&apos;ll find writing about technologies
           I&apos;m interested in at the time, or how I&apos;m learning and growing in my
