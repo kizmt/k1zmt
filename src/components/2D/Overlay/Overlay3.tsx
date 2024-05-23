@@ -5,13 +5,11 @@ export default function Overlay3() {
   return (
     <div className="antialiased absolute max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
       <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-        <h1 className="font-medium text-2xl mb-8 tracking-tighter">my work</h1>
-        <div className="ff7-text">
-          <TextAnimator
-            text={`
+        <h1 className="font-medium text-2xl mb-8 tracking-tighter fade-in-text">my work</h1>
+        <div className="fade-in-text">
           On a mission to build products developers love, and along the
-          way, teach the next generation of developers. Here's a summary of my
-          work so far.`} />
+          way, teach the next generation of developers. Here&apos;s a summary of my
+          work so far.
         </div>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Arcana Markets</h2>
@@ -21,12 +19,11 @@ export default function Overlay3() {
         <br />
         <div className="ff7-text">
           <TextAnimator
-            text={`I joined Vercel early to grow Next.js and our developer community.
-            I built our Developer Relations team to teach our community about our
-            products. Since I joined Vercel in 2020, Next.js active developers have grown
-            1000 percent, now at around 900k. Next.js is now a top 10 software 
-            project on GitHub with. It&apos;s used by Walmart, ChatGPT, Starbucks, Okta,
-            Datastax, Notion, and more.`} />
+            text={`▪ Securing partnerships with industry leaders
+            ▪ Competing in and winning hackathon events
+            ▪ Rust & TS Development
+            ▪ Managing team dynamics and social accounts
+            ▪ Supporting developers, attending workshops, networking with IL’s.`} />
         </div>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Mako Labs</h2>
@@ -36,25 +33,24 @@ export default function Overlay3() {
         <br />
         <div className="ff7-text">
           <TextAnimator
-            text={`Workiva WK is a cloud platform for data reporting and compliance.
-            During my time at Workiva, I gained my first production experience
-            using React. I worked on tooling to help predict and alert and
-            regressions in our SaaS platform, building a product similar to
-            open-source tools like Sentry.`} />
+            text={`▪ Secured contracted project for Solana-based exchange
+            ▪ Networking and relationship building
+            ▪ Open source contributions
+            ▪ Workshops and educational conferences`} />
         </div>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">SolApe DEX</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm ff7-text">
-          Fullstack Engineer, Operations, 2020 to 2022
+          Fullstack Engineer, Chief of Operations, 2020 to 2022
         </p>
         <br />
         <div className="ff7-text">
           <TextAnimator
-            text={`Hy-Vee, an almost 100-year-old grocery chain in the United States,
-            wanted to build a new version of their digital storefront. I joined a
-            team of product engineers
-            working across web and mobile to rebuild their legacy .NET application
-            around 500k MAU with React and React Native..`} />
+            text={`▪ Responsible for securing new DEX partnerships and token listings
+            ▪ Contributions to GitHub repositories
+            ▪ Hosting community town-hall & twitter space events
+            ▪ Producing an NFT collection
+            ▪ Attending Solana conferences and promoting the brand/exchange`} />
         </div>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Scan Global Logistics</h2>
@@ -64,11 +60,12 @@ export default function Overlay3() {
         <br />
         <div className="ff7-text">
           <TextAnimator
-            text={`Workiva WK is a cloud platform for data reporting and compliance.
-            During my time at Workiva, I gained my first production experience
-            using React. I worked on tooling to help predict and alert and
-            regressions in our SaaS platform, building a product similar to
-            open-source tools like Sentry.`} />
+            text={`▪ Meeting monthly KPI’s and establishing leads with new business
+            ▪ Maintaining relationships and building upon existing accounts
+            ▪ Trained in EDI Enterprise software, responsible for entering in operational and account related data.
+            ▪ Responsible for managing the accounts of top clients in the technology sector
+            ▪ Responsible for charging out and providing spreadsheet breakdowns of monthly costing to clients
+            `} />
         </div>
       </div>
     </div>

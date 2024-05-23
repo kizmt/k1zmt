@@ -1,8 +1,6 @@
 .overlay_container {
   position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .overlay_container img {
@@ -31,6 +29,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px; /* Adjust to move buttons further down */
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 3s; /* Adjust the delay as needed */
+  z-index: 10;
 }
 .overlay_button_container_inner {
   position: absolute;
@@ -88,16 +91,6 @@
     font-size: 1rem;
     margin-top: 10px;
   }
-}
-
-.overlay_button_container {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px; /* Adjust to move buttons further down */
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  animation-delay: 3s; /* Adjust the delay as needed */
-  z-index: 10;
 }
 
 .overlay_button_row {

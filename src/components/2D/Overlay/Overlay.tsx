@@ -18,7 +18,7 @@ function Overlay() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowButtons(true);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timeout);
   }, []);

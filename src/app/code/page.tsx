@@ -13,6 +13,15 @@ import style from "../../components/2D/Overlay/Overlay.module.css";
 const Page: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
+  const [showButtons, setShowButtons] = useState(false);
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowButtons(true);
+    });
+  
+    return () => clearTimeout(timeout);
+  }, []);
+
   useEffect(() => {
     const handleResize = () => {
       const x = window.matchMedia("(max-width: 700px)");
@@ -47,6 +56,7 @@ const Page: React.FC = () => {
             intensity={0.85}
           />
         </Canvas>
+        {showButtons && (
         <div className={style.overlay_button_container}>
           <div className={style.overlay_button_row}>
             <Link href="/">
@@ -54,6 +64,7 @@ const Page: React.FC = () => {
             </Link>
           </div>
         </div>
+        )}
         <Footer />
       </Suspense>
     </div>
