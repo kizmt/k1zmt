@@ -17,7 +17,7 @@ export default function Overlay3() {
           Co-founder and developer, 2023 - present
         </p>
         <br />
-        <div className="ff7-text">
+        <div>
           <TextAnimator
             text={`▪ Securing partnerships with industry leaders
             ▪ Competing in and winning hackathon events
@@ -31,7 +31,7 @@ export default function Overlay3() {
           Freelance Web Developer, 2022 to present
         </p>
         <br />
-        <div className="ff7-text">
+        <div>
           <TextAnimator
             text={`▪ Secured contracted project for Solana-based exchange
             ▪ Networking and relationship building
@@ -44,7 +44,7 @@ export default function Overlay3() {
           Fullstack Engineer, Chief of Operations, 2020 to 2022
         </p>
         <br />
-        <div className="ff7-text">
+        <div>
           <TextAnimator
             text={`▪ Responsible for securing new DEX partnerships and token listings
             ▪ Contributions to GitHub repositories
@@ -58,7 +58,7 @@ export default function Overlay3() {
           Business Development Manager, 2017 to 2020
         </p>
         <br />
-        <div className="ff7-text">
+        <div>
           <TextAnimator
             text={`▪ Meeting monthly KPI’s and establishing leads with new business
             ▪ Maintaining relationships and building upon existing accounts
