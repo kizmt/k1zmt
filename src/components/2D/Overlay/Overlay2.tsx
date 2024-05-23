@@ -97,7 +97,7 @@ function Overlay2() {
           I&apos;m interested in at the time, or how I&apos;m learning and growing in my
           career, sharing knowledge along the way.
         </div>
-        <div className="ff7-text fade-in-text">
+        <div className="fade-in-text">
           I&apos;ve worked with and advised companies on{' '}
           <Link href="/blog/developer-marketing">developer marketing</Link>,{' '}
           <Link href="/blog/devrel">developer relations</Link>, building
