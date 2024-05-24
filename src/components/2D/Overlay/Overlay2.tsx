@@ -10,7 +10,7 @@ import trunks from '../../../../public/images/gifs/trunks.gif';
 
 function Overlay2() {
   return (
-    <div className="antialiased absolute max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
+    <div className="antialiased absolute max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text z-50">
       <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
         <h1 className="fade-in-text mb-4 text-2xl font-medium tracking-tighter">
           about me ⚡️
@@ -84,7 +84,7 @@ function Overlay2() {
         </div>
         <div className="my-4 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
         <div className="font-medium fade-in-text">
-        Outside of work, I enjoy retro cartoons and anime, a range of sports, and am a music 
+        Outside of work, I enjoy retro cartoons, video games, a range of sports, and am a music 
         enthusiast trained in audio engineering. This diverse range of interests keeps me 
         inspired and balanced, fueling my passion for technology and creativity.
         </div>
@@ -94,6 +94,13 @@ function Overlay2() {
         in a variety of roles across different teams and continuously developing new skill sets. 
         My journey within the industry has been dynamic and fulfilling, allowing me to grow as a developer, 
         project manager, and all-round team player. 
+        </div>
+        <br></br>
+        <div className="font-medium fade-in-text">
+        Check out my latest work over @
+        <a href="https://arcana.markets" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+              Arcana Markets
+            </a>
         </div>
       </div>
     </div>

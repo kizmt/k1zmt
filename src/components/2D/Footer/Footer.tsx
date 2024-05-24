@@ -2,12 +2,10 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaTelegram, FaX } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
-import MusicPlayer from "@/components/Audio/AudioPlayer";
 
 export default function Footer() {
     return (
-        <footer className="min-w-full px-4 py-1 top-0 z-10 text-white bg_primary">
-            <MusicPlayer />
+        <footer className="min-w-full px-4 py-8 top-0 z-10 text-white bg_primary">
             <div className="flex items-center justify-center mx-auto p-4 text-2xl">
             <Link href="/" className="flex items-center sm:text-2xl text-lg font-semibold text-white hover:text-orange no-underline">
                         <span>contact</span>

@@ -1,7 +1,6 @@
 "use client";
 
 import AudioPlayer from "react-h5-audio-player";
-import 'react-h5-audio-player/lib/styles.css';
 import "../../../public/styles/ff7-ui.css";
 import useAudioPlayerStore from "@/stores/useAudioPlayerStore";
 import { useEffect, useRef } from "react";
@@ -50,13 +49,13 @@ export default function MusicPlayer() {
     }, [isPlaying, isStopped]);
 
     return (
-        <div className="max-w-2xl mx-auto p-10">
+        <div className="max-w-2xl mx-auto p-10 z-10 fixed bottom-1">
             <p className="ff7-window">
                 {playlist[currentMusicIndex].name}
             </p>
             <AudioPlayer
                 ref={audioRef}
-                className="custom-audio-player" // Apply the custom CSS class here
+                className="custom-audio-player"
                 onEnded={handleClickNext}
                 autoPlayAfterSrcChange={isPlaying}
                 showSkipControls={true}
