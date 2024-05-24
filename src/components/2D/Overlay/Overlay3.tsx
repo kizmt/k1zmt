@@ -7,8 +7,8 @@ export default function Overlay3() {
       <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
         <h1 className="font-medium text-2xl mb-8 tracking-tighter fade-in-text">my work</h1>
         <div className="fade-in-text">
-          On a mission to build products developers love, and along the
-          way, teach the next generation of developers. Here&apos;s a summary of my
+          On a mission to build products that users love, and along the
+          way, teach the next generation about decentralized finance. Here&apos;s a summary of my
           work so far.
         </div>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
