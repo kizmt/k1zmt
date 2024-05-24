@@ -12,13 +12,13 @@ import style from "../../components/2D/Overlay/Overlay.module.css";
 
 const Page: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
-  
+
   const [showButtons, setShowButtons] = useState(false);
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowButtons(true);
     });
-  
+
     return () => clearTimeout(timeout);
   }, []);
 
@@ -39,31 +39,33 @@ const Page: React.FC = () => {
   }, []);
 
   return (
-    <div className="main_container overflow-auto">
+    <div className='main_container overflow-auto h-screen'>
       <Suspense fallback={<Loader />}>
-        <TopBar />  
-        <Overlay2 />
-        <Canvas
-          className="canvas"
-          camera={{ position: [0, 0, 1] }}
-        >
-          <Stars />
-          <pointLight position={[100, 100, 100]} intensity={0.8} />
-          <hemisphereLight
-            color="#234fad"
-            groundColor="#fff"
-            position={[-7, 25, 13]}
-            intensity={0.85}
-          />
-        </Canvas>
+        <TopBar />
+        <div className="relative h-full overflow-auto">
+          <Overlay2 />
+          <Canvas
+            camera={{ position: [0, 0, 1] }}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <Stars />
+            <pointLight position={[100, 100, 100]} intensity={0.8} />
+            <hemisphereLight
+              color="#234fad"
+              groundColor="#fff"
+              position={[-7, 25, 13]}
+              intensity={0.85}
+            />
+          </Canvas>
+        </div>
         {showButtons && (
-          <div className={`${style.overlay_button_container} z-20`}>
-            <div className={style.overlay_button_row}>
-              <Link href="/work">
-                <button className={style.button}>Next page</button>
-              </Link>
-            </div>
+        <div className={style.overlay_button_container}>
+          <div className={style.overlay_button_row}>
+            <Link href="/work">
+            <button className={style.button}>Next page</button>
+            </Link>
           </div>
+        </div>
         )}
         <Footer />
       </Suspense>

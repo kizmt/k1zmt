@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import Stars from "@/components/3D/Stars";
 import Modal from "@/components/3D/Modal";
@@ -12,10 +12,26 @@ import TopBar from "@/components/2D/TopBar/TopBar";
 const Home: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup listener on unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div className='main_container overflow-auto'>
+    <div className="main_container overflow-auto h-screen">
       <Suspense fallback={<Loader />}>
         <TopBar />
+        <div className="relative h-full overflow-auto">
         <Overlay />
         <Canvas
           camera={{ position: [0, 0, 1] }}
@@ -36,6 +52,7 @@ const Home: React.FC = () => {
           />
         </Canvas>
         <Footer />
+        </div>
       </Suspense>
     </div>
   );

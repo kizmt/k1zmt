@@ -1,3 +1,5 @@
+import "../../../../public/styles/ff7-ui-fonts.css";
+import TextAnimator from '../Text/TextAnimator';
 import Image from 'next/image';
 import gohan from '../../../../public/images/gifs/gohan2-optimize.gif';
 import aerith from '../../../../public/images/gifs/aerithz.gif';
@@ -5,12 +7,10 @@ import jerry from '../../../../public/images/gifs/jerry.gif';
 import donchic from '../../../../public/images/gifs/donchic.gif';
 import hammers from '../../../../public/images/gifs/hammers.gif';
 import trunks from '../../../../public/images/gifs/trunks.gif';
-import TextAnimator from '../Text/TextAnimator';
-import "../../../../public/styles/ff7-ui-fonts.css";
 
 function Overlay2() {
   return (
-    <div className="antialiased relative max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text pb-16 sm:pb-24 z-10">
+    <div className="antialiased absolute max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text">
       <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
         <h1 className="fade-in-text mb-4 text-2xl font-medium tracking-tighter">
           about me ⚡️

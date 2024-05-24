@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 function Overlay4() {
   return (
-<div className="max-w-7xl px-4 sm:px-6 lg:px-8 antialiased absolute z-50 max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text fade-in-text">
-<div className="mx-auto lg:max-w-none">
-<h2 className="font-medium text-2xl mb-8 tracking-tighter fade-in-text text-center">Code</h2>    
-<div className="rounded-xl border border-gray-700 bg-gray-800 p-4">
+<div className="antialiased absolute max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto centered-text z-30">
+  <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+  <h2 className="font-medium text-2xl mb-8 tracking-tighter fade-in-text text-center">Code</h2>    
+  <div className="rounded-xl border border-gray-700 bg-gray-800 p-4">
   <div className="flex items-center gap-4 ">
     <Image
       alt=""
@@ -21,10 +21,7 @@ function Overlay4() {
       <div className="flow-root">
         <ul className="-m-1 flex flex-wrap">
           <li className="p-1 leading-none">
-            <a href="#" className="text-xs font-medium text-gray-300"> GitHub </a>
-          </li>
-          <li className="p-1 leading-none">
-            <a href="#" className="text-xs font-medium text-gray-300">Website</a>
+            <a href="https://github.com" target="_blank" className="text-xs font-medium text-gray-300"> GitHub </a>
           </li>
         </ul>
       </div>
@@ -34,7 +31,7 @@ function Overlay4() {
 
   <ul className="mt-4 space-y-2">
     <li>
-      <a href="#" className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
+      <a href="https://github.com/arcana-markets/arcana-ui" target="_blank" className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
         <strong className="font-medium text-white">arcana-ui</strong>
 
         <p className="mt-1 text-xs font-medium text-gray-300">
@@ -46,7 +43,7 @@ function Overlay4() {
 
   <ul className="mt-4 space-y-2">
     <li>
-      <a href="#" className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
+      <a href="https://github.com/kizmt/dex-explorer" target="_blank" className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
         <strong className="font-medium text-white">dex-explorer</strong>
 
         <p className="mt-1 text-xs font-medium text-gray-300">
@@ -58,7 +55,7 @@ function Overlay4() {
 
   <ul className="mt-4 space-y-2">
     <li>
-      <a href="#" className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
+      <a href="https://github.com/arcana-markets/arcana-trading-bot" target="_blank" className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
         <strong className="font-medium text-white">arcana-trading-bot</strong>
 
         <p className="mt-1 text-xs font-medium text-gray-300">
@@ -70,7 +67,7 @@ function Overlay4() {
 
   <ul className="mt-4 space-y-2">
     <li>
-      <a href="#" className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
+      <a href="https://github.com/openbook-dex/openbook-v2" target="_blank" className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
         <strong className="font-medium text-white">openbook-v2</strong>
 
         <p className="mt-1 text-xs font-medium text-gray-300">
@@ -82,7 +79,7 @@ function Overlay4() {
 
   <ul className="mt-4 space-y-2">
     <li>
-      <a href="#" className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
+      <a href="https://github.com/arcana-markets/spl-token-faucet" target="_blank" className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
         <strong className="font-medium text-white">spl-token-faucet</strong>
 
         <p className="mt-1 text-xs font-medium text-gray-300">
