@@ -55,7 +55,7 @@ function Overlay() {
         </h1>
         <div className="ff7-text">
           <TextAnimator
-            text="This page is dedicated to my work as a fullstack web developer within the blockchain space, 
+            text="This page is dedicated to my work as a builder and fullstack web developer within the blockchain space, 
             showcasing user apps, open source contributions and other milestone achievements.
             Click the view profile button to begin navigating the site, or scroll down for direct contact details."
           />
