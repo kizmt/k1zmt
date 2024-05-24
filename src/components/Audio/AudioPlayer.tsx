@@ -3,7 +3,7 @@
 import AudioPlayer from "react-h5-audio-player";
 import "../../../public/styles/ff7-ui.css";
 import useAudioPlayerStore from "@/stores/useAudioPlayerStore";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const playlist: { name: string, src: string }[] = [
     { name: "Lupe Fiasco - Samurai", src: "https://od.lk/s/NzFfMjE1NDYzNzdf/Lupe%20Fiasco%20-%20Samurai.mp3" },
@@ -19,6 +19,7 @@ const playlist: { name: string, src: string }[] = [
 export default function MusicPlayer() {
     const { currentMusicIndex, setCurrentMusicIndex, isPlaying, setIsPlaying, isStopped, setIsStopped } = useAudioPlayerStore();
     const audioRef = useRef<AudioPlayer>(null);
+    const [isMobile, setIsMobile] = useState(false);
 
     const handleClickPrevious = () => {
         currentMusicIndex === 0
@@ -48,8 +49,22 @@ export default function MusicPlayer() {
         }
     }, [isPlaying, isStopped]);
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize(); // Check the initial size
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    if (isMobile) {
+        return null; // Do not render on mobile devices
+    }
+
     return (
-        <div className="max-w-2xl mx-auto p-10 z-10 fixed bottom-1">
+        <div className="audio-player-container max-w-2xl mx-auto p-10 z-51 fixed bottom-1">
             <p className="ff7-window">
                 {playlist[currentMusicIndex].name}
             </p>
