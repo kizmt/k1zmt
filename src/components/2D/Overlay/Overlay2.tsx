@@ -18,7 +18,8 @@ function Overlay2() {
         <div className="font-medium">
           <TextAnimator
             text={`Jack of all trades; I'm a developer, project manager, and chief operator. I'm currently 
-            building Arcana Markets, a yield-optimizing DeFi protocol on the Solana blockchain.`}/>
+            building Arcana Markets, a yield-optimizing DeFi protocol on the Solana blockchain.
+            You can learn more about that below`}/>
         </div>
         <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
           <div className="relative h-40">
@@ -83,15 +84,16 @@ function Overlay2() {
         </div>
         <div className="my-4 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
         <div className="font-medium fade-in-text">
-          Over the past decade, I&apos;ve written content on my blog and newsletter.
-          I try to keep things simple. You&apos;ll find writing about technologies
-          I&apos;m interested in at the time, or how I&apos;m learning and growing in my
-          career, sharing knowledge along the way.
+        Outside of work, I enjoy retro cartoons and anime, a range of sports, and am a music 
+        enthusiast trained in audio engineering. This diverse range of interests keeps me 
+        inspired and balanced, fueling my passion for technology and creativity.
         </div>
+        <br></br>
         <div className="font-medium fade-in-text">
-          I&apos;ve worked with and advised companies on
-          developer marketing developer relations, 
-          building open-source communities, product-led growth, and more.
+        Over the last 5 years, I&apos;ve developed a deep interest in the blockchain space, working 
+        in a variety of roles across different teams and continuously developing new skill sets. 
+        My journey within the industry has been dynamic and fulfilling, allowing me to grow as a developer, 
+        project manager, and all-round team player. 
         </div>
       </div>
     </div>
