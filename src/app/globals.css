@@ -99,6 +99,21 @@ nav {
 }
 
 /* Default styles (non-mobile) */
+.centered-text-2 {
+  left: 0%;
+  transform: translateX(80%);
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .centered-text-2 {
+    position: static; /* Reset the position */
+    left: auto;       /* Reset the left property */
+    transform: none;  /* Reset the transform */
+  }
+}
+
+/* Default styles (non-mobile) */
 .centered-text {
   position: absolute;
   left: 50%;
