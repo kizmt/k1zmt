@@ -11,8 +11,7 @@ import trunks from '../../../../public/images/gifs/trunks.gif';
 
 function Overlay2() {
   return (
-    <div className={style.overlay_container}>
-    <div className="antialiased max-w-2xl flex-col md:flex-row mx-4 mt-8 lg:mx-auto z-50 centered-text-2">
+    <div className="antialiased max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto z-50 centered-text-2">
       <div className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
         <h1 className="fade-in-text mb-4 text-2xl font-medium tracking-tighter">
           about me ⚡️
@@ -105,7 +104,6 @@ function Overlay2() {
             </a>
         </div>
       </div>
-    </div>
     </div>
   );
 }
