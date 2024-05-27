@@ -5,9 +5,9 @@ import { Canvas } from "@react-three/fiber";
 import Stars from "@/components/3D/Stars";
 import Modal from "@/components/3D/Modal";
 import Overlay from "@/components/2D/Overlay/Overlay";
-import Loader from "@/components/2D/Loader/Loader";
 import Footer from "@/components/2D/Footer/Footer";
 import TopBar from "@/components/2D/TopBar/TopBar";
+import Loader from "@/components/2D/Loader/Loader";
 
 const Home: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -28,8 +28,8 @@ const Home: React.FC = () => {
   }, []);
 
   return (
+    <Suspense fallback={<Loader />}>
     <div className="main_container overflow-auto h-screen">
-      <Suspense fallback={<Loader />}>
         <TopBar />
         <div className="relative h-full overflow-auto">
           <Overlay />
@@ -53,8 +53,8 @@ const Home: React.FC = () => {
           </Canvas>
           <Footer />
         </div>
-      </Suspense>
     </div>
+    </Suspense>
   );
 };
 

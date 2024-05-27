@@ -3,7 +3,6 @@
 import { useEffect, useState, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import Stars from "@/components/3D/Stars";
-import Loader from "@/components/2D/Loader/Loader";
 import Overlay4 from "@/components/2D/Overlay/Overlay4";
 import Footer from "@/components/2D/Footer/Footer";
 import TopBar from "@/components/2D/TopBar/TopBar";
@@ -40,7 +39,6 @@ const Page: React.FC = () => {
 
   return (
     <div className='main_container overflow-auto'>
-      <Suspense fallback={<Loader />}>
       <TopBar />
         <Overlay4 />
         <Canvas
@@ -66,7 +64,6 @@ const Page: React.FC = () => {
         </div>
         )}
         <Footer />
-      </Suspense>
     </div>
   );
 };

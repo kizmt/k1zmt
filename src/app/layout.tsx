@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from '@vercel/analytics/react';
-import MusicPlayer from "../components/Audio/AudioPlayer"; // Correct path
+import MusicPlayer from "../components/Audio/AudioPlayer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,15 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-          <main style={{ flex: "1" }}>
-            {children}
-          </main>
+    <html lang="en" className={`!bg-primary ${inter.className}`}>
+      <body>
+        {children}
           <Analytics />
           <MusicPlayer />
-        </div>
       </body>
     </html>
   );
